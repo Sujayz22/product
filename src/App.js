@@ -4,7 +4,7 @@ import Home from './components/Home';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/product'>
       <Routes>
          <Route path="/" element={ <Home />}/>
       </Routes>
