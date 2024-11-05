@@ -9,6 +9,7 @@ module.exports = {
         cs1: '#E2E1E1', 
         cs2r: '#595959', 
         btn1: '#0076DF',
+        bnr: '#FC6D0F',
       },
       fontFamily: {
         Crimson: ['"Crimson Text"', 'sans-serif'], 

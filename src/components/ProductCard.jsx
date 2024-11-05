@@ -39,7 +39,7 @@ const ProductCard = ({ imageUrl, title, price, originalPrice, rating, onSale }) 
         <img className="h-64 w-full rounded-t-lg object-cover" src={imageUrl} alt={`${title} `} /> {/* Adjusted height */}
       </a>
       {onSale && (
-        <span className="absolute top-0 left-0 w-28 translate-y-4 -translate-x-6 -rotate-45 bg-gray-400 text-center text-sm text-black">
+        <span className="absolute top-0 left-0 w-28 translate-y-4 -translate-x-6 -rotate-45 bg-bnr text-center text-sm text-white">
           Sale
         </span>
       )}
