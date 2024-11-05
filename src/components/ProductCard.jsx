@@ -34,19 +34,19 @@ const ProductCard = ({ imageUrl, title, price, originalPrice, rating, onSale }) 
   };
 
   return (
-    <div className="relative m-2 w-72 h-[28rem] max-w-xs overflow-hidden rounded-lg bg-white shadow-md"> {/* Increased size */}
-      <a href="/">
+    <div className="relative m-2 w-72 h-[28rem] max-w-xs select-none overflow-hidden rounded-lg bg-white shadow-md"> {/* Increased size */}
+      <div>
         <img className="h-64 w-full rounded-t-lg object-cover" src={imageUrl} alt={`${title} `} /> {/* Adjusted height */}
-      </a>
+      </div>
       {onSale && (
         <span className="absolute top-0 left-0 w-28 translate-y-4 -translate-x-6 -rotate-45 bg-bnr text-center text-sm text-white">
           Sale
         </span>
       )}
       <div className="mt-4 px-5 pb-5">
-        <a href="/">
+        <span>
           <h5 className="text-xl font-semibold tracking-tight text-slate-900">{title}</h5>
-        </a>
+        </span>
         <div className="mt-2.5 mb-1 flex items-center">
           <span className="mr-2 rounded bg-yellow-200 px-2.5 py-0.5 text-xs font-semibold">{rating}</span>
           <Rating name="half-rating-read" defaultValue={rating} precision={0.1} readOnly />
